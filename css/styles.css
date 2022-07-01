@@ -1,0 +1,100 @@
+
+h2{
+    margin: 0 auto;
+    width: 500px;
+    margin-top: 3%;
+    font-family: 'Press Start 2P', cursive;
+    color: #639301;
+}
+
+.formulario{
+    width: 400px;
+    padding: 30px;
+    border:1px solid #ccc;
+    margin: 0 auto;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    background-color: rgb(7, 7, 80);
+    color: #fff;
+}
+
+.formulario p{
+    width: 100%;
+    font-size: 1.5em;
+}
+.field{
+    width: 100%;
+    margin: 15px 0;
+}
+.field label, 
+.field span{
+    padding-left: 10px;
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+}
+.radiobox label{
+    width: auto;
+    display: inline-block;
+}
+input[type=text],
+input[type=email],
+textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+input#nao{
+    margin-left: 30px;
+}
+textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+/* input[type=submit]{
+    display: block;
+    background-color: rgb(214, 214, 30);
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+} */
+
+/* Elementos de classe "campo" */
+.field campo {
+    margin-bottom: 1em;
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.field campo label {
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+button{
+    display: block;
+    background-color: rgb(214, 214, 30);
+    outline: 0;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+    width: 340px;
+    height: 50px;
+    transition: transform 100ms ease-in-out;
+    box-shadow: 4px 4px 0 var(--color-black-first);
+}
+
+button:hover{
+    transform: scale(1.05);
+}
