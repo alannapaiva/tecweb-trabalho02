@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <title>Flappy Bird</title>
     <link rel="stylesheet" href="css/flappy.css">
+    <link rel="icon" type="image/jpg" href="./img/passaro.png" />
 </head>
 
 <body class="conteudo">
     <h1>Flappy Bird</h1>
     <div wm-flappy>
-
-        <!-- 
+<!-- 
        <img class="passaro" src="img/passaro.png" alt="passaro">
         <div class="par-de-barreiras">
             <div class="barreira">
@@ -23,10 +23,14 @@
                 <div class="corpo"></div>
             </div>
         </div>
-        <div class="progresso"> 10 </div>   -->
+        <div class="progresso"> 10 </div>   
+	</div> -->
+    <div game-over id="game-over" style="display: none">
+        <img src="./img/game_over.png" height="400px" alt="">
+        <h3 infos></h3>
+        <a onclick="window.location.reload()">Jogar Novamente?</a>
     </div>
-
-
+    <audio som src="./sounds/mario-game-over.mp3"></audio>
     <script src="js/flappy.js"></script>
 </body>
 
