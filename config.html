@@ -7,62 +7,66 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/flappy.css">
+    <link rel="icon" type="image/jpg" href="./img/passaro.png" />
     <title>Configuração do jogo</title>
 </head>
 <body>
     <h2>Configurações do Jogo</h2>
-    <form class="formulario" method="post"> 
-        
+    <form action="./index.html" method="get" id="form">
         <div class="field">
-            <label for="nome">Nome do jogador:</label>
+            <label for="nome" class="field-name">Nome do jogador:</label>
             <input type="text" id="nome" name="nome">
         </div>
-        <input id="night-mode" class="lamp" type="checkbox" aria-label="night-mode" />
-       <!-- <div class="field radiobox">
-            <span>Intervalo de abertura entre os canos</span>
-            <input type="radio" name="canos" id="sim" value="sim" checked><label for="sim">Fácil</label>
-            <input type="radio" name="canos" id="nao" value="nao"><label for="nao">Médio</label>
-            <input type="radio" name="canos" id="nao" value="nao"><label for="nao">Grande</label>
+        <div class="field radiobox">
+            <label for="cenario" class="form-group-label">Cenário do jogo:</label><br>
+            <input type="radio" name="turno" id="diurno" value="diurno" checked><label for="diurno">Diurno</label>
+            <input type="radio" name="turno" id="noturno" value="noturno"><label for="noturno">Noturno</label>
+        </div>
+       <div class="field radiobox">
+            <label for="intervalo" class="form-group-label">Intervalo entre a abertura dos canos:</label><br>
+            <input type="radio" name="intervalo" id="intervalo-facil" value="250" checked><label for="intervalo-facil">Fácil</label>
+            <input type="radio" name="intervalo" id="intervalo-medio" value="200"><label for="intervalo-medio">Médio</label>
+            <input type="radio" name="intervalo" id="intervalo-dificil" value="160"><label for="intervalo-dificil">Grande</label>
         </div>
         <div class="field radiobox">
-            <span>Distância entre os canos:</span>
-            <input type="radio" name="canos" id="sim" value="sim" checked><label for="sim">Fácil</label>
-            <input type="radio" name="canos" id="nao" value="nao"><label for="nao">Médio</label>
-            <input type="radio" name="canos" id="nao" value="nao"><label for="nao">Grande</label>
+            <label for="distancia" class="form-group-label">Distancia entre os canos:<br>
+            <input type="radio" name="distancia" id="distancia-facil" value="500" checked><label for="distancia-facil">Fácil</label>
+            <input type="radio" name="distancia" id="distancia-media" value="400"><label for="distancia-media">Médio</label>
+            <input type="radio" name="distancia" id="distancia-dificil" value="300"><label for="distancia-dificil">Grande</label>
         </div>
         <div class="field">
-            <label for="nome">Velocidade do jogo:</label>
-            <input type="text" id="nome" name="nome" required>
+            <label for="velocidade" class="form-group-label">Velocidade do jogo: (0-50)</label >
+            <input type="number" id="velocidade" name="vel-jogo" value="20" min="0" max="50" step="5"/>
         </div>
-        <div class="field campo">
-            <label for="senioridade">Personagens:</label>
-            <select id="senioridade" required>
-              <option selected disabled value="">Selecione</option>
-              <option>personagem 1</option>
-              <option>personagem 2</option>
-              <option>personagem 3</option>
+        <div class="field">
+            <label for="personagem" class="form-group-label">Personagens:</label>
+            <select name="personagem">
+                <option selected>Passaro</option>
+                <option>ViuvaNegra</option>
+                <option>Hulk</option>
             </select>
         </div>
         </div>    
         <div class="field radiobox">
-            <span>Tipo do jogo</span>
-            <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Treino</label>
-            <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Real</label>
+            <label for="tipo" id="tipo">Tipo de jogo</label><br>
+            <input type="radio" name="tipo" id="treino" value="treino" checked><label for="sim">Treino</label>
+            <input type="radio" name="tipo" id="real" value="real"><label for="nao">Real</label>
         </div>
         <div class="field radiobox">
-            <span>Velocidade dos personagens:</span>
-            <input type="radio" name="canos" id="sim" value="sim" checked><label for="sim">Baixa</label>
-            <input type="radio" name="canos" id="nao" value="nao"><label for="nao">Média</label>
-            <input type="radio" name="canos" id="nao" value="nao"><label for="nao">Rápida</label>
+            <label for="vel-personagem" class="form-group-label">Velocidade do personagem:</label><br>
+            <input type="radio" name="velocidade-perso" id="baixa" value="5" checked><label for="baixa">Baixa</label>
+            <input type="radio" name="velocidade-perso" id="media" value="8"><label for="media">Média</label>
+            <input type="radio" name="velocidade-perso" id="rapida" value="10"><label for="rapida">Rápida</label>
         </div>
         <div class="field radiobox">
-            <span>Pontuação:</span>
-            <input type="radio" name="canos" id="sim" value="sim" checked><label for="sim">1</label>
-            <input type="radio" name="canos" id="nao" value="nao"><label for="nao">10</label>
-            <input type="radio" name="canos" id="nao" value="nao"><label for="nao">100</label>
-        </div> -->
-        <button>Confirmar</button>
+            <label for="pontuacao" class="form-group-label">Pontuação: </label><br>
+            <input type="radio" name="pontuacao" id="1" value="1" checked><label for="1">1</label>
+            <input type="radio" name="pontuacao" id="10" value="10"><label for="10">10</label>
+            <input type="radio" name="pontuacao" id="100" value="100"><label for="100">100</label>
+        </div>
+
+        <input type="submit" class="button" value="Confirmar" onclick="init()"  />
     </form>
-    <script src="js/flappy.js"></script>
+    <script src="js/config.js"></script>
 </body>
 </html>
