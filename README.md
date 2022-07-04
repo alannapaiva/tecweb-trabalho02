@@ -13,3 +13,4 @@
 ![image](https://user-images.githubusercontent.com/63065023/177061565-91149036-a8d5-45ee-abb5-9795d9ff2b9c.png)
 
 ### Jogo desenvolvido apenas com HTML, CSS e JavaScript
+Link do vídeo de apresentaçao: 
