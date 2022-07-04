@@ -1,5 +1,8 @@
 # Trabalho Prático desenvolvido na disciplina de Tecnologias Web 
 
+![image](https://user-images.githubusercontent.com/63065023/177061878-155a3f6a-f3a5-4a7a-8884-11473a923286.png)
+
+
 ## Configuraçoes Iniciais do jogo 
 ![image](https://user-images.githubusercontent.com/63065023/177061304-a0bdc2cc-16d3-46ca-8f24-d9220c44baea.png)
 
@@ -8,3 +11,4 @@
 
 ![image](https://user-images.githubusercontent.com/63065023/177061565-91149036-a8d5-45ee-abb5-9795d9ff2b9c.png)
 
+### Jogo desenvolvido apenas com HTML, CSS e JavaScript
