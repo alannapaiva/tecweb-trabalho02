@@ -4,7 +4,7 @@
 
 
 ## Configurações Iniciais do jogo 
-![image](https://user-images.githubusercontent.com/63065023/177062063-657d44ac-3abb-43ae-886f-29ff8550bfd5.png)
+![image](https://user-images.githubusercontent.com/63065023/177063437-9952bf4e-9bc3-4f23-b286-2cf9e38d4e24.png)
 
 
 ## Aplicação do Jogo com as configurações escolhidas pelo usuário
